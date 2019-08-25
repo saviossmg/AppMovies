@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.upcomming.UpcommingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- horizontal -->
+    <ListView
+        android:id="@+id/upcomming_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/upcomming_gdl_h90"
+        app:layout_constraintEnd_toStartOf="@+id/upcomming_gdl_v95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/upcomming_gdl_v05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/upcomming_progressbar_loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progressbar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/upcomming_list"
+        app:layout_constraintEnd_toEndOf="@+id/upcomming_list"
+        app:layout_constraintStart_toStartOf="@+id/upcomming_list"
+        app:layout_constraintTop_toTopOf="@+id/upcomming_list" />
+
+    <Spinner
+        android:id="@+id/upcomming_page_spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upcomming_gdl_v85"
+        app:layout_constraintStart_toStartOf="@+id/upcomming_gdl_v55"
+        app:layout_constraintTop_toTopOf="@+id/upcomming_gdl_h92" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center|end"
+        android:lines="2"
+        android:text="@string/select_page"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upcomming_gdl_v55"
+        app:layout_constraintStart_toStartOf="@+id/upcomming_gdl_v15"
+        app:layout_constraintTop_toTopOf="@+id/upcomming_gdl_h92" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_h90"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_h92"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <!-- vertical -->
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_v05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_v15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_v55"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_v85"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upcomming_gdl_v95"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</android.support.constraint.ConstraintLayout>
