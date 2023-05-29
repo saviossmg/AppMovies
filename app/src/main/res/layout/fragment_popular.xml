@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -60,14 +60,14 @@
         app:layout_constraintStart_toStartOf="@+id/popular_gdl_v15"
         app:layout_constraintTop_toTopOf="@+id/popular_gdl_h92" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/popular_gdl_h90"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/popular_gdl_h92"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -75,39 +75,39 @@
         app:layout_constraintGuide_percent="0.92" />
 
     <!-- vertical -->
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/popular_gdl_v05"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/popular_gdl_v15"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.15" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/popular_gdl_v55"
         app:layout_constraintGuide_percent="0.55"/>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/popular_gdl_v85"
         app:layout_constraintGuide_percent="0.85"/>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/popular_gdl_v95"
         app:layout_constraintGuide_percent="0.95"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

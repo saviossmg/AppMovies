@@ -3,11 +3,11 @@ package com.svmdev.appmovies.view;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.support.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -43,19 +43,19 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_popular:
-                    if(popularFragment == null){
-                        popularFragment = PopularFragment.newInstance();
-                    }
-                    openFragment(popularFragment);
-                    break;
-                case R.id.navigation_upcomming:
-                    if(upcommingFragment == null){
-                        upcommingFragment = UpcommingFragment.newInstance();
-                    }
-                    openFragment(upcommingFragment);
-                    break;
+            int selected = item.getItemId();
+            int popId = R.id.navigation_popular;
+
+            if(selected == popId) {
+                if(popularFragment == null){
+                    popularFragment = PopularFragment.newInstance();
+                }
+                openFragment(popularFragment);
+            } else {
+                if(upcommingFragment == null){
+                    upcommingFragment = UpcommingFragment.newInstance();
+                }
+                openFragment(upcommingFragment);
             }
             return true;
         }
